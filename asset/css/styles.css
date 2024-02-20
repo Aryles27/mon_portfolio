@@ -1,0 +1,466 @@
+/* <uniquifier>: Use a uniquifier for the class name
+   <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+*{
+    font-family: "Montserrat", sans-serif;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; /*cacher tout contenu qui dépasse la largeur d'un élément dans la direction horizontale*/
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    padding: 4rem 9%;
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid black;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: black;
+    cursor: pointer;
+    background: #fff;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: #ffd700;
+    color: #fff;
+
+}
+
+h1{
+    font-size: 3.5rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+h1 span{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+/* ===== HEADER ===== */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    border-bottom: .1rem solid white;
+    padding: 0 2.5rem;
+}
+
+
+header h1 span{
+    color: aqua;
+}
+
+
+header nav a{
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+header nav a:hover{
+    border-bottom: .2rem solid aqua;
+}
+
+
+
+#menu-bar{
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ===== SECTION HOME ===== */
+
+
+
+.home{
+    height: 88vh;
+    background-image: url(/asset/img/background-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ====== SECTION A PROPOS ====== */
+
+
+.about{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
+
+.about .box-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.about .box-container img{
+    width: 20rem;
+    border-radius: 20rem;
+    border: .3rem solid aqua;
+    padding: .3rem;
+}
+
+.about .box-container .box h2{
+    font-size: 2rem;
+    flex: 1 1 30rem;
+}
+
+.about .box-container .box p{
+    font-size: 1.4rem;
+}
+
+
+
+/* ===== SECTION SKILLS ===== */
+
+.competences{
+    /* background-color: #f9f9f9; */
+    background-color: #242424;
+    color: white;
+}
+
+.competences .box-container .box i{
+    font-size: 5rem;
+    color: #eaeaea;
+}
+
+.competences .box-container .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.competences .box-container .box .skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ====== SECTIONS PROJETS ====== */
+
+.realisation{
+    position: relative;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
+
+.realisation .slide-container img.active{
+    display: block;
+}
+
+.realisation #next, #prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 100;
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: white;
+    border: .2rem solid white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.realisation #next:hover, #prev:hover{
+    background-color: aqua;
+    color: black;
+    border: .2rem solid white;
+}
+
+.realisation #prev{
+    left: 3rem;
+}
+
+.realisation #next{
+    right: 3rem;
+}
+
+.realisation img{
+    height: 50rem;
+}
+
+.realisation .slide-container:hover img{
+    filter: brightness(10%);
+}
+
+.realisation .textappear{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opcatity 0.3s ease;
+    color: white;
+    font-size: 2rem;
+    display: none;
+    text-align: center;
+}
+
+.realisation .slide-container:hover .textappear{
+    opacity: 1;
+    display: block;
+}
+
+
+.realisation .slide-container{
+    display: none;
+}
+
+.realisation .slide-container.active{
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* ===== SECTION CONTACT ===== */
+
+.contact{
+    background-color: #242424;
+}
+
+
+.contact div{
+    border-radius: 1rem;
+    /* background-color: #eee; */
+    border: 1rem solid #eee;
+
+    background-color: #1c1c1c;
+    color: white;
+    
+}
+.contact a {
+    font-size: 2.2rem;
+    display: block;
+    padding: 2rem;
+    color: white;
+}
+
+.contact a:nth-child(3) {
+    text-align: center;
+}
+
+.contact a:nth-child(4) {
+    text-align: right;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+
+
+@media(max-width:800px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    header h1{
+        margin: 0;
+    }
+
+
+    #menu-bar{
+        display: block;
+    }
+
+
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        text-align: center;
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav.active{
+        left: 0%;
+    }
+
+    header nav a{
+        display: inline-block;
+        text-align: center;
+        background-color: #ffffff;
+        color: black;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: .5rem 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    header nav a:hover{
+        background-color: aqua;
+    }
+
+
+
+
+    .about .box-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+
+    .competences .box-container .box{
+        flex-wrap: wrap;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+
+    .competences .box-container .box i{
+        font-size: 8rem;
+        margin-top: 3.5rem;
+    }
+
+    
+
+    
+
+    .contact a {
+        font-size: 2rem;
+    }
+
+    .contact a:nth-child(3) {
+        text-align: left;
+    }
+    
+    .contact a:nth-child(4) {
+        text-align: left;
+    }
+}
+
+@media(max-width:1000px){
+    .competences .box-container .box{
+        flex-wrap: wrap;
+        font-size: 2rem;
+        gap: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .competences .box-container .box i{
+        font-size: 8rem;
+    }
+
+    .competences h1{
+        margin-bottom: 10rem;
+    }
+
+
+    .realisation{
+        padding-bottom: 18rem;
+    }
+    .realisation .slide-container img{
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .realisation #next, #prev{
+        top: 90%;
+        
+    }
+
+    /* .contact{
+        padding-top: 8rem;
+    } */
+}
