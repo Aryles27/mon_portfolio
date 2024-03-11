@@ -187,7 +187,7 @@ header nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20rem;
+    gap: 15rem;
     text-align: center;
     margin-bottom: 3rem;
     font-size: 1.5rem;
@@ -198,6 +198,8 @@ header nav a:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 40rem;
+    height: 20rem;
 }
 
 
@@ -441,6 +443,10 @@ footer p{
         font-size: 2rem;
         gap: 10rem;
         margin-bottom: 10rem;
+    }
+
+    .competences .box-container .box .skills{
+        margin: auto;
     }
 
     .competences .box-container .box i{
