@@ -161,7 +161,8 @@ header nav a:hover{
 }
 
 .about .box-container img{
-    width: 20rem;
+    width: 200px;
+    height: 200px;
     border-radius: 20rem;
     border: .3rem solid aqua;
     padding: .7rem;
@@ -173,7 +174,7 @@ header nav a:hover{
 }
 
 .about .box-container .box p{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
