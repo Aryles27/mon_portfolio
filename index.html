@@ -29,7 +29,7 @@
 
         <div id="menu-bar" class="fas fa-bars"></div>
 
-        <h1>Aryles <span>Dev</span></h1>
+        <h1 class="logo">Aryles <span>Dev</span></h1>
 
         <nav class="nav-bar">
             <a href="#about">À propos</a>   
@@ -61,7 +61,7 @@
 
                 <h2>Étudiant Bachelor Développement Web</h2>
 
-                <p>Je suis un jeune étudiant en reconversion professionnelle et passionné par le développement web, en particulier le back-end. Avec un background en comptabilité et gestion, j'apporte une approche logique et méthodique à mes projets. Souriant et travailleur, je suis déterminé à créer des solutions efficaces et soignées dans chaque projet que j'entreprends.</p>
+                <p>Je suis un jeune étudiant en reconversion professionnelle et passionné par le développement web. Avec un background en comptabilité et gestion, j'apporte une approche logique et méthodique à mes projets. Souriant et travailleur, je suis déterminé à créer des solutions efficaces et soignées dans chaque projet que j'entreprends.</p>
 
                 <a href="/CV_aryles.pdf" target="_blank" class="btn">Téléchargez mon CV</a>
             </div>
@@ -166,22 +166,76 @@
 
     <!-- ===== SECTION CONTACT START ===== -->
 
-    <section class="contact" id="contact">
-        <div>
-        <h1>Contactez <span>moi</span></h1>
-
-        <a href="mailto:benchabanearyles@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> benchabanearyles@gmail.com</a>
-        <a href="https://www.linkedin.com/in/aryles-ben-chabane-7a2461217/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linked In</a>
-        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-    </div>
-    </section>
+    <!-- <section class="contact" id="contact">
+        <div class="border">
+            <h1>Contactez <span>moi</span></h1>
+            <div>
+                <a href="https://www.linkedin.com/in/aryles-ben-chabane-7a2461217/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linked In</a>
+                <a href="mailto:benchabanearyles@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> benchabanearyles@gmail.com</a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+            
+        </div>
+    </section> -->
 
     <!-- ===== SECTION CONTACT END ===== -->
+
+    <!-- ===== FORMULAIRE START =====-->
+
+        <section class="contact" id="contact">
+            
+                
+            <h1>Contactez <span>moi</span></h1>
+
+            <div class="box-container">
+                <div class="rs">
+                    <a href="https://www.linkedin.com/in/aryles-ben-chabane-7a2461217/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linked In</a>
+                    <a href="mailto:benchabanearyles@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> benchabanearyles@gmail.com</a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="form">
+                    <form action="#"> 
+                        <div class="input-box">
+                            <div class="input-field field">
+                                <input type="text" placeholder="Nom" id="name" class="item" autocomplete="off"> 
+                                <div class="error-txt">Ce champ ne peut pas être vide</div>
+                            </div>
+                            <div class="input-field field">
+                                <input type="email" placeholder="Adresse mail" id="email" class="item" autocomplete="off"> 
+                                <div class="error-txt">Ce champ ne peut pas être vide</div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-field field">
+                                <input type="tel" placeholder="Numéro de téléphone" id="phone" class="item" autocomplete="off"> 
+                                <div class="error-txt">Ce champ ne peut pas être vide</div>
+                            </div>
+                            <div class="input-field field">
+                                <input type="text" placeholder="Objet" id="objet" class="item" autocomplete="off"> 
+                                <div class="error-txt">Ce champ ne peut pas être vide</div>
+                            </div>
+                        </div>
+                        <div class="textarea-field field">
+                            <textarea name="" id="message" cols="30" rows="10" placeholder="Message" class="item" autocomplete="off"></textarea>
+                            <div class="error-txt">Ce champ ne peut pas être vide</div>
+                        </div>
+                        <button type="submit">Envoyer message</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    <!--===== FORMULAIRE END =====-->
 
     <footer>
         <p>© Aryles Ben Chabane <span class="year"></span> - Tous droits réservés</p>
     </footer>
     
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/asset/js/index.js"></script>
 </html>

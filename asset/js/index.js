@@ -59,7 +59,7 @@ prev.addEventListener('click', function(){
         textappear.textContent = 'Mon premier projet personnel HTML CSS réalisé avec OpenClassroom'
         lien.href = 'https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/'
     } else if(index == 2){
-        textappear.textContent = 'Mon premier site web interactif réalisé avec HTML CSS ainsi que JavaScript'
+        textappear.textContent = 'Mon premier site web interactif réalisé avec HTML CSS et JavaScript'
         lien.href = 'https://site-e-commerce-js.vercel.app/'
     } else if(index == 3){
         textappear.textContent = "Reproduction d'une page Nike pour renforcer mes compétences en Javascript"
@@ -68,6 +68,77 @@ prev.addEventListener('click', function(){
         textappear.textContent = "Site vitrine complet d'un spa avec formulaire de contact"
         lien.href = 'https://spa-vitrine.vercel.app/'
     }
+    
+})
+
+
+
+
+
+
+// FORMULAIRE 
+
+const form = document.querySelector('form');
+const fullName = document.getElementById('name')
+const email = document.getElementById('email')
+const phone = document.getElementById('phone')
+const objet = document.getElementById('objet')
+const message = document.getElementById('message')
+
+function sendEmail(){
+    const bodyMessage = `Full Name : ${fullName.value} <br> Email : ${email.value} <br> Numéro de téléphone : ${phone.value} <br> Message : ${message.value} <br>`
+    Email.send({
+        SecureToken : "641fee65-f070-4ed4-8af7-89d73fade3ed",
+        To : 'benchabanearyles@gmail.com',
+        From : "benchabanearyles@gmail.com",
+        Subject : objet.value,
+        Body : bodyMessage
+    }).then(
+      message => {
+        if (message == "OK"){
+            Swal.fire({
+                title: "Succès",
+                text: "Message envoyé avec succès !",
+                icon: "success"
+              });
+        }
+      }
+    );
+}
+
+function checkInputs(){
+    const items = document.querySelectorAll('.item')
+
+    for (const item of items){
+        if (item.value == ""){
+            item.classList.add('error');
+            item.parentElement.classList.add('error');
+        }
+
+        item.addEventListener("keyup", () => {
+            if (item.value != ""){
+                item.classList.remove('error');
+                item.parentElement.classList.remove('error');
+            }
+            else{
+                item.classList.add('error');
+                item.parentElement.classList.add('error');
+            }
+        });
+    }
+}
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    checkInputs();
+
+    if (!fullName.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !message.classList.contains("error")){
+        sendEmail();
+        form.reset();
+         return false
+    }
+    
     
 })
 
