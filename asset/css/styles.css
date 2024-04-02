@@ -82,7 +82,7 @@ header{
     background-color: black;
     color: white;
     border-bottom: .1rem solid white;
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
 }
 
 
@@ -92,12 +92,13 @@ header h1 span{
 
 header h1, header h1 span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem 0;
 }
 
 
 header nav a{
     padding: 1rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.8rem;
     font-size: 1.5rem;
     color: white;
     font-weight: 500;
@@ -117,7 +118,9 @@ header nav a:hover{
 }
 
 
-
+header nav a:last-child{
+    color: #0ef;
+}
 
 
 
