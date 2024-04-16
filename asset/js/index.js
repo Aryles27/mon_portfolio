@@ -210,7 +210,6 @@ const sr = ScrollReveal ({
 sr.reveal('.title-section', {delay:100, origin:'top'});
 sr.reveal('.about img', {delay:650, origin:'left'});
 sr.reveal('.about .box', {delay:450, origin:'right'});
-sr.reveal('.competences .box-container .box .skills', {delay:200, origin:'top'});
-sr.reveal('.realisation .container .box .img-container', {delay:400, origin:'top'});
+
 sr.reveal('.contact .box-container .rs', {delay:200, origin:'left'});
-sr.reveal('.contact .box-container .form', {delay:200, origin:'right'});
+
