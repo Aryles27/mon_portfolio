@@ -30,7 +30,7 @@
         <div id="menu-bar" class="fas fa-bars"></div>
 
         <!-- <h1 class="logo">Aryles <span>Dev</span></h1> -->
-        <h1>Aryles</h1>
+        <a href="#home"><h1>Aryles <span>Ben Chabane</span></h1></a>
 
         <nav class="nav-bar">
             <a href="#about">À propos</a>   
@@ -44,7 +44,19 @@
 
     <!-- ===== HEADER END ===== -->
 
-    <section class="home">
+    <section class="home" id="home">
+
+        <img src="/asset/img/background-img.jpg" alt="">
+        <div class="hometxt">
+            <h1>Bienvenue sur mon Portfolio !</h1>
+            <div class="container-txtanim">
+                <p class="txtanim"></p>
+            </div>
+            <a href="#contact" class="btn"><i class="fa-solid fa-comments"></i> Actuellement disponible</a>
+            <a href="#about" class="arrow"><i class="fa-solid fa-arrow-down"></i></a>
+
+        </div>
+   
     
         <!-- <a href="#contact" class="btn">Contactez moi !</a> -->
     
@@ -54,7 +66,7 @@
 
     <section class="about" id="about">
 
-        <h1><span>À propos</span> de moi</h1>
+        <h1 class="title-section"><span>À propos</span> de moi</h1>
         <div class="box-container">
             <img src="/asset/img/pp2coda.png" alt="">
 
@@ -62,12 +74,13 @@
 
                 <h2>Étudiant Bachelor Développement Web</h2>
 
-                <p>Je suis un étudiant en reconversion professionnelle et passionné par le développement web. Avec un background en comptabilité et gestion, j'apporte une approche logique et méthodique à mes projets. Souriant et travailleur, je suis déterminé à créer des solutions efficaces et soignées dans chaque projet que j'entreprends.</p>
+                <p>Je suis un étudiant passionné par le développement web. Avec un background en comptabilité et gestion, j'apporte une approche logique et méthodique à mes projets. Souriant et travailleur, je suis déterminé à créer des solutions digitales efficaces et soignées dans chaque projet que j'entreprends.</p>
 
                 <a href="/CV_aryles.pdf" target="_blank" class="btn">Téléchargez mon CV</a>
             </div>
         </div>
     </section>
+
     <!-- ====== SECTION A PROPOS END ===== -->
 
 
@@ -76,41 +89,53 @@
 
 
     <section class="competences" id="skills">
-        <h1>Mes <span>compétences</span></h1>
+        <h1 class="title-section">Mes <span>compétences</span></h1>
 
         <div class="box-container">
             <div class="box">
 
                 <div class="skills">
                     <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
                     <p>Maîtrise de HTML pour la création de pages web structurées et fonctionnelles, conforme à la sémantique et aux normes actuelles.</p>
+                    <!-- <p class="knowmore">Voir</p> -->
                 </div>
 
                 <div class="skills">
                     <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
                     <p>Expertise en CSS pour la conception de mises en page élégantes, la stylisation et la création d'interfaces utilisateur modernes et réactives.</p>
+                    <!-- <p class="knowmore">Voir</p> -->
                 </div>
 
                 <div class="skills">
                     <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript</h2>
                     <p>Compétence en JavaScript pour améliorer l'interactivité des sites web, créer des animations et optimiser l'expérience utilisateur, notamment sur des sites e-commerce.</p>
+                    <!-- <p class="knowmore">Voir</p> -->
                 </div>
-            </div>
-            <div class="box">
+            <!-- </div>
+            <div class="box"> -->
 
                 <div class="skills">
                     <i class="fa-brands fa-python"></i>
-                    <p>Maîtrise des fondamentaux Python : création de fonctions, utilisation de boucles et développement de programmes plus complexes, tel qu'un RPG basique, aboutissant à un résultat réussi.</p>
+                    <h2>Python</h2>
+                    <p>Maîtrise des fondamentaux Python : création de fonctions, utilisation de boucles et développement de programmes plus complexes..</p>
+                    <!-- <p class="knowmore">Voir</p> -->
                 </div>
 
                 <div class="skills" class="figma">
                     <i class="fa-brands fa-figma"></i>
-                    <p>Maîtrise de Figma pour la conception d'interfaces utilisateur intuitives, la création de maquettes interactives et la collaboration efficace au sein d'équipes de conception.</p>
+                    <h2>Figma</h2>
+                    <p>Conception d'interfaces utilisateur intuitives et création de maquettes interactives en collaboration efficace au sein d'équipes de conception.</p>
+                    <!-- <p class="knowmore">Voir</p> -->
                 </div>
 
                 <div class="skills">
                     <i class="fa-solid fa-database"></i>
-                    <p>Je possède des compétences de base en SQL, notamment la création de tables, l'insertion de données, l'exécution de requêtes et la suppression d'éléments ou de tables complètes.</p>
+                    <h2>SQL</h2>
+                    <p>Création de tables, insertion de données, exécution de requêtes et la suppression d'éléments ou de tables complètes.</p>
+                    <!-- <p class="knowmore">Voir</p> -->
                 </div>
 
             </div>
@@ -126,13 +151,82 @@
     <!-- ====== SECTION RÉALISATIONS START -->
 
     <section class="realisation" id="projects">
-        <h1><span>Mes</span> réalisations</h1>
+        <h1 class="title-section">Mes <span>réalisations</span></h1>
+
+        <div class="container">
+            <div class="box">
+                <div class="img-container">
+                    <img src="/asset/img/projet/projet1.png" alt="">
+                </div>
+                <div class="link-container">
+              
+                    <a href="https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>   
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    
+                    <img src="/asset/img/projet/projet2.png" alt="">
+                </div>
+                <div class="link-container">
+
+                    <a href="https://site-e-commerce-js.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/Aryles27/site-e-commerce-js" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+
+                    <img src="/asset/img/projet/projet3.png" alt="">
+                </div>
+                <div class="link-container">
+
+                    <a href="https://nike-shoes-e-commerce.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/Aryles27/nike-shoes-e-commerce-" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+
+                    <img src="/asset/img/projet/projet4.png" alt="">
+                </div>
+                <div class="link-container">
+
+                    <a href="https://spa-vitrine.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/Aryles27/Spa-vitrine" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+
+                    <img src="/asset/img/projet/projet5.png" alt="">
+                </div>
+                <div class="link-container">
+
+                    <a href="https://quiz-nine-jade.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/Aryles27/Quiz" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                </div>
+            </div>
+    
+        </div>
+
+       
+
+
+
+
         
         
-        <div class="slide-container active">
+        <!-- <div class="slide-container active">
            
                 <a href="https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/" target="_blank" class="link"><img src="/asset/img/projet/projet1.png" class="mainimg" alt="Robbie Lens"></a>
                 <p class="textappear">Mon premier projet personnel HTML CSS réalisé avec OpenClassroom <span class="github"></span></p>
+                <div class="link-hvr">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                
         
         </div>
 
@@ -152,7 +246,6 @@
         <div class="slide-container">
             
             <img src="/asset/img/projet/projet4.png" alt="">
-    
        
         </div>
     
@@ -160,39 +253,23 @@
         
 
         <div id="prev" class="fas fa-chevron-left"></div>
-        <div id="next" class="fas fa-chevron-right"></div>
+        <div id="next" class="fas fa-chevron-right"></div> -->
 
     </section>
     <!-- ====== SECTION RÉALISATIONS END -->
-
-    <!-- ===== SECTION CONTACT START ===== -->
-
-    <!-- <section class="contact" id="contact">
-        <div class="border">
-            <h1>Contactez <span>moi</span></h1>
-            <div>
-                <a href="https://www.linkedin.com/in/aryles-ben-chabane-7a2461217/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linked In</a>
-                <a href="mailto:benchabanearyles@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> benchabanearyles@gmail.com</a>
-                <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-            
-        </div>
-    </section> -->
-
-    <!-- ===== SECTION CONTACT END ===== -->
 
     <!-- ===== FORMULAIRE START =====-->
 
         <section class="contact" id="contact">
             
                 
-            <h1>Contactez <span>moi</span></h1>
+            <h1 class="title-section"><span>Contactez</span> moi</h1>
 
             <div class="box-container">
                 <div class="rs">
                     <a href="https://www.linkedin.com/in/aryles-ben-chabane-7a2461217/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linked In</a>
                     <a href="mailto:benchabanearyles@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> benchabanearyles@gmail.com</a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://github.com/Aryles27" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
                 <div class="form">
                     <form action="#"> 
@@ -236,6 +313,7 @@
     </footer>
     
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/asset/js/index.js"></script>
